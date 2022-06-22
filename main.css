@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgba(185, 217, 253, 0.87);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#landing {
+    background-size: cover;
+    background: url(/new/photo1.jpg);
+    padding: 0rem 5rem;
+}
+
+#logo {
+    font-size: 1.3em;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+    #about {
+        float: right;
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        float: left;
+        width: 100%;
+        font-size: 1.1em;
+    }
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about>a {
+    color: rgba(8, 8, 8, 0.925);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about>a:hover {
+    color: rgba(187, 186, 186, 0.829);
+    text-decoration: none;
+}
+
+#about>a:not(:last-child) {
+    margin-right: 3%;
+}
+
+#quote {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 2rem;
+    font-family: "cursive";
+    color: rgb(61, 61, 61);
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    background: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.intro-text {
+    color: rgb(233, 233, 233);
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+p img {
+    padding-bottom: 20px;
+}
+
+#lessons {
+    float: left;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding: 500px 200px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 239, 250);
+    border-top: 2px solid silver;
+    color: #f4f4fc;
+    font-size: 1.3em;
+    background-size: cover;
+    text-align: center;
+}
+
+@media (min-width: 1401px) {
+    #lessons {
+        padding: 100px 10%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #lessons {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #lessons div {
+        width: 98%!important;
+    }
+}
+
+#lessons div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#lessons h2 {
+    font-size: 2em;
+}

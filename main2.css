@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(232, 231, 227);
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 100vh;
+    text-decoration: none;
+}
+
+span {
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+a {
+    color: rgba(8, 8, 8, 0.925);
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    color: rgba(99, 96, 96, 0.829);
+    text-decoration: none;
+}
